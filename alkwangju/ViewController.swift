@@ -7,38 +7,60 @@
 //
 
 import UIKit
-import MediaPlayer
 
-class ViewController: UIViewController {
 
-    var moviePlayer:MPMoviePlayerController!
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+
+    var arr=["Satu","Dua","Tiga"]
     
+    @IBOutlet
+    var table: UITableView!
+    var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView = UITableView()
+        tableView.dataSource = self
+        tableView.delegate = self
+        self.view.addSubview(self.tableView)
         
-        var url = NSURL(string: "https://www.youtube.com/watch?v=_p3Aw_W_35Q")
+        //Auto-set the UITableViewCells height (requires iOS8)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 44
+        tableView.frame = CGRect(x: 0, y: 65, width: self.view.frame.size.width, height: self.view.frame.size.height)
         
-
-        moviePlayer = MPMoviePlayerController(contentURL: url)
-        
-        moviePlayer.view.frame = self.view.bounds
-        moviePlayer.prepareToPlay()
-        moviePlayer.scalingMode = .AspectFill
-        self.view.addSubview(moviePlayer.view)
-//        moviePlayer.view.frame = CGRect(x: 20, y: 100, width: 200, height: 150)
-//        
-//        self.view.addSubview(moviePlayer.view)
-        moviePlayer.fullscreen = true
-        
-        moviePlayer.controlStyle = MPMovieControlStyle.Embedded
-        // Do any additional setup after loading the view, typically from a nib.
+        // add something to messages
+       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arr.count
+    }
 
-
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell=UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+        cell.textLabel?.text=arr[indexPath.row]
+        return cell;
+    }
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("toYoutubeViewController", sender: tableView)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier=="toYoutubeViewController" {
+            let vc=segue.destinationViewController as UIViewController
+            let indexpath: NSIndexPath = tableView.indexPathForSelectedRow()!
+            vc.title=arr[indexpath.row]
+        }
+    }
 }
 

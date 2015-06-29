@@ -14,6 +14,19 @@
 		D6E078781B24200000AE0DA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6E078761B24200000AE0DA0 /* LaunchScreen.xib */; };
 		D6E078841B24200000AE0DA0 /* alkwangjuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E078831B24200000AE0DA0 /* alkwangjuTests.swift */; };
 		D6E078AA1B242A5F00AE0DA0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E078A91B242A5F00AE0DA0 /* MediaPlayer.framework */; };
+		D6ED4D9E1B40FA7D005FFBB5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ED4D9D1B40FA7D005FFBB5 /* Constants.swift */; };
+		D6ED4DC61B41248E005FFBB5 /* icon48.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DC51B41248E005FFBB5 /* icon48.png */; };
+		D6ED4DCB1B4125DD005FFBB5 /* icon@120.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DC91B4125DD005FFBB5 /* icon@120.png */; };
+		D6ED4DCC1B4125DD005FFBB5 /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DCA1B4125DD005FFBB5 /* icon80.png */; };
+		D6ED4DCE1B41263C005FFBB5 /* icon@87.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DCD1B41263C005FFBB5 /* icon@87.png */; };
+		D6ED4DD01B41267F005FFBB5 /* icon@180.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DCF1B41267F005FFBB5 /* icon@180.png */; };
+		D6ED4DDC1B412B50005FFBB5 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DDB1B412B50005FFBB5 /* icon58.png */; };
+		D6ED4DDE1B412B8A005FFBB5 /* icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DDD1B412B8A005FFBB5 /* icon29.png */; };
+		D6ED4DE01B412BD1005FFBB5 /* icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DDF1B412BD1005FFBB5 /* icon40.png */; };
+		D6ED4DE31B412C62005FFBB5 /* icon76.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DE11B412C62005FFBB5 /* icon76.png */; };
+		D6ED4DE41B412C62005FFBB5 /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DE21B412C62005FFBB5 /* icon152.png */; };
+		D6ED4DE61B41321D005FFBB5 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = D6ED4DE51B41321D005FFBB5 /* splash.png */; };
+		D6ED4DE81B4136EB005FFBB5 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ED4DE71B4136EB005FFBB5 /* YoutubeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +51,19 @@
 		D6E078821B24200000AE0DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6E078831B24200000AE0DA0 /* alkwangjuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alkwangjuTests.swift; sourceTree = "<group>"; };
 		D6E078A91B242A5F00AE0DA0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D6ED4D9D1B40FA7D005FFBB5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D6ED4DC51B41248E005FFBB5 /* icon48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon48.png; sourceTree = "<group>"; };
+		D6ED4DC91B4125DD005FFBB5 /* icon@120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@120.png"; sourceTree = "<group>"; };
+		D6ED4DCA1B4125DD005FFBB5 /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
+		D6ED4DCD1B41263C005FFBB5 /* icon@87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@87.png"; sourceTree = "<group>"; };
+		D6ED4DCF1B41267F005FFBB5 /* icon@180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@180.png"; sourceTree = "<group>"; };
+		D6ED4DDB1B412B50005FFBB5 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
+		D6ED4DDD1B412B8A005FFBB5 /* icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon29.png; sourceTree = "<group>"; };
+		D6ED4DDF1B412BD1005FFBB5 /* icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40.png; sourceTree = "<group>"; };
+		D6ED4DE11B412C62005FFBB5 /* icon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon76.png; sourceTree = "<group>"; };
+		D6ED4DE21B412C62005FFBB5 /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
+		D6ED4DE51B41321D005FFBB5 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		D6ED4DE71B4136EB005FFBB5 /* YoutubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +109,12 @@
 			children = (
 				D6E0786D1B24200000AE0DA0 /* AppDelegate.swift */,
 				D6E0786F1B24200000AE0DA0 /* ViewController.swift */,
+				D6ED4DE71B4136EB005FFBB5 /* YoutubeViewController.swift */,
 				D6E078711B24200000AE0DA0 /* Main.storyboard */,
 				D6E078741B24200000AE0DA0 /* Images.xcassets */,
 				D6E078761B24200000AE0DA0 /* LaunchScreen.xib */,
 				D6E0786B1B24200000AE0DA0 /* Supporting Files */,
+				D6ED4D9D1B40FA7D005FFBB5 /* Constants.swift */,
 			);
 			path = alkwangju;
 			sourceTree = "<group>";
@@ -94,6 +122,17 @@
 		D6E0786B1B24200000AE0DA0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6ED4DC91B4125DD005FFBB5 /* icon@120.png */,
+				D6ED4DCA1B4125DD005FFBB5 /* icon80.png */,
+				D6ED4DCF1B41267F005FFBB5 /* icon@180.png */,
+				D6ED4DDD1B412B8A005FFBB5 /* icon29.png */,
+				D6ED4DDB1B412B50005FFBB5 /* icon58.png */,
+				D6ED4DE11B412C62005FFBB5 /* icon76.png */,
+				D6ED4DE21B412C62005FFBB5 /* icon152.png */,
+				D6ED4DE51B41321D005FFBB5 /* splash.png */,
+				D6ED4DDF1B412BD1005FFBB5 /* icon40.png */,
+				D6ED4DCD1B41263C005FFBB5 /* icon@87.png */,
+				D6ED4DC51B41248E005FFBB5 /* icon48.png */,
 				D6E0786C1B24200000AE0DA0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -196,9 +235,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6ED4DCE1B41263C005FFBB5 /* icon@87.png in Resources */,
+				D6ED4DD01B41267F005FFBB5 /* icon@180.png in Resources */,
+				D6ED4DCC1B4125DD005FFBB5 /* icon80.png in Resources */,
 				D6E078731B24200000AE0DA0 /* Main.storyboard in Resources */,
+				D6ED4DE41B412C62005FFBB5 /* icon152.png in Resources */,
 				D6E078781B24200000AE0DA0 /* LaunchScreen.xib in Resources */,
+				D6ED4DCB1B4125DD005FFBB5 /* icon@120.png in Resources */,
+				D6ED4DC61B41248E005FFBB5 /* icon48.png in Resources */,
+				D6ED4DE61B41321D005FFBB5 /* splash.png in Resources */,
 				D6E078751B24200000AE0DA0 /* Images.xcassets in Resources */,
+				D6ED4DDE1B412B8A005FFBB5 /* icon29.png in Resources */,
+				D6ED4DE01B412BD1005FFBB5 /* icon40.png in Resources */,
+				D6ED4DE31B412C62005FFBB5 /* icon76.png in Resources */,
+				D6ED4DDC1B412B50005FFBB5 /* icon58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +268,8 @@
 			files = (
 				D6E078701B24200000AE0DA0 /* ViewController.swift in Sources */,
 				D6E0786E1B24200000AE0DA0 /* AppDelegate.swift in Sources */,
+				D6ED4DE81B4136EB005FFBB5 /* YoutubeViewController.swift in Sources */,
+				D6ED4D9E1B40FA7D005FFBB5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +463,7 @@
 				D6E078891B24200000AE0DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6E0788A1B24200000AE0DA0 /* Build configuration list for PBXNativeTarget "alkwangjuTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +472,7 @@
 				D6E0788C1B24200000AE0DA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

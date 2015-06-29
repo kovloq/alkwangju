@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9E1885A3-992F-46DD-B071-A2324F652F37</string>
+	<key>IDESourceControlProjectName</key>
+	<string>alkwangju</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>02873A2A9CF1937985B6DF15A670995B9CDF26D8</key>
+		<string>https://github.com/kovloq/alkwangju.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>alkwangju.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>02873A2A9CF1937985B6DF15A670995B9CDF26D8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kovloq/alkwangju.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>02873A2A9CF1937985B6DF15A670995B9CDF26D8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>02873A2A9CF1937985B6DF15A670995B9CDF26D8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>alkwangju</string>
+		</dict>
+	</array>
+</dict>
+</plist>
