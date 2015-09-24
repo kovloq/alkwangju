@@ -5,13 +5,19 @@
 //  Created by Perdana Adhitama on 6/7/15.
 //  Copyright (c) 2015 Kovloq Technologies. All rights reserved.
 //
+// Youtube Chanel ID = UChL3OZcOBMVTS1nwcyzeYEA
+// Playlist ID = UUhL3OZcOBMVTS1nwcyzeYEA
+// URL to receive all videos https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUhL3OZcOBMVTS1nwcyzeYEA&key=AIzaSyCdcTS9ldzD9byz4Gpqj7-o8g2hbOLHJRY&maxResults=50
+
 
 import UIKit
 
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var arr=["Satu","Dua","Tiga"]
+    
+    
+    var arr=[String]()
     
     @IBOutlet
     var table: UITableView!
@@ -28,7 +34,26 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableView.estimatedRowHeight = 44
         tableView.frame = CGRect(x: 0, y: 65, width: self.view.frame.size.width, height: self.view.frame.size.height)
         
-        // add something to messages
+        let urlString = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUhL3OZcOBMVTS1nwcyzeYEA&key=AIzaSyCdcTS9ldzD9byz4Gpqj7-o8g2hbOLHJRY&maxResults=50"
+        
+        if let url = NSURL(string: urlString){
+            if let data = NSData(contentsOfURL: url){
+                if let json: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary {
+                    if let items = json["items"] as? NSArray {
+                        for item in items {
+//                            let obj = item as NSDictionary
+                            if let snippet = item["snippet"] as? NSDictionary {
+                                let title=snippet["title"] as String
+                                arr.append(title)
+                            }
+//                            let id = item["id"] as String
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
        
     }
 
@@ -62,5 +87,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             vc.title=arr[indexpath.row]
         }
     }
+    
+    
 }
 
