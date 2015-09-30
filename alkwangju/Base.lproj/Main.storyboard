@@ -1,101 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fVj-LH-qrz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g4u-gZ-TPf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Playlist-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Playlist Controller-->
+        <scene sceneID="esr-aa-Cwo">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alkwangju" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="g4u-gZ-TPf" customClass="PlaylistController" customModule="alkwangju" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EHn-X5-QI5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="I5X-U6-Rfy">
-                                <rect key="frame" x="-6" y="0.0" width="392" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="H9i-ah-ARM">
-                                        <rect key="frame" x="0.0" y="0.0" width="392" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H9i-ah-ARM" id="wMg-rK-56H">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Playlist" id="t2z-WV-fNz"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="fpE-g5-zrW" kind="show" identifier="toYoutubeViewController" id="Exs-Z6-ESn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="CH1-Jl-gNe">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Playlist" id="E1I-xz-O32"/>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celltable" id="BCU-zC-1h8">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BCU-zC-1h8" id="DaG-yc-IfR">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="HOz-cN-9Qd" kind="show" identifier="toYoutube" id="wf8-xk-reo"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="g4u-gZ-TPf" id="VU1-MO-BX4"/>
+                            <outlet property="delegate" destination="g4u-gZ-TPf" id="0l1-yJ-uHO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="YCr-uj-VJC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWg-1G-r4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948.5" y="135.5"/>
+            <point key="canvasLocation" x="938.5" y="135.5"/>
         </scene>
-        <!--Youtube View Controller-->
-        <scene sceneID="iFB-sR-TBr">
+        <!--Title-->
+        <scene sceneID="El6-JV-JCW">
             <objects>
-                <viewController id="fpE-g5-zrW" customClass="YoutubeViewController" customModule="alkwangju" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HOz-cN-9Qd" customClass="YoutubeViewController" customModule="alkwangju" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Nl9-h8-EjP"/>
-                        <viewControllerLayoutGuide type="bottom" id="sqr-R4-jfc"/>
+                        <viewControllerLayoutGuide type="top" id="g6J-5v-tlm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pth-lI-GLB"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Uyi-Ob-yID">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="WWP-lR-W8z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCa-qK-qTE">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v39-aa-Nhw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="pause" id="rJO-vK-qnj"/>
-                                    <barButtonItem style="plain" id="qmD-bL-dxt">
-                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="FvN-UX-PZU">
-                                            <rect key="frame" x="41" y="6" width="246" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </slider>
-                                    </barButtonItem>
+                                    <navigationItem title="Title" id="9E3-Mb-luU">
+                                        <barButtonItem key="backBarButtonItem" title="Back" id="8KF-dn-edM"/>
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="cqO-tc-RFj">
+                                            <connections>
+                                                <action selector="Back:" destination="HOz-cN-9Qd" id="L4B-hY-cuc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
-                            </toolbar>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="31V-Ez-JMu">
+                                <rect key="frame" x="0.0" y="44" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BF4-4U-eBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1415.5" y="135.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="wre-pa-Juu">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fVj-LH-qrz" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TSF-Da-L7y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                    <navigationItem key="navigationItem" title="Title" id="db2-q1-4E1"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lqp-hH-QAn"/>
+                        <outlet property="nav" destination="v39-aa-Nhw" id="N1S-vL-Fjo"/>
+                        <outlet property="webview" destination="31V-Ez-JMu" id="d5n-nK-iRX"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9fk-zG-Tlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsg-YI-9FV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410.5" y="135.5"/>
+            <point key="canvasLocation" x="1625" y="135"/>
         </scene>
     </scenes>
 </document>
