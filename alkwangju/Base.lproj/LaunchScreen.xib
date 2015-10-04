@@ -10,11 +10,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="rnL-P0-WCI">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="rnL-P0-WCI">
                     <rect key="frame" x="37" y="274" width="300" height="120"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.78431379795074463" green="0.17647059261798859" blue="0.19215688109397888" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="rnL-P0-WCI" secondAttribute="centerX" constant="0.5" id="ctV-S9-IhO"/>
+                <constraint firstAttribute="centerY" secondItem="rnL-P0-WCI" secondAttribute="centerY" constant="-0.5" id="eab-R5-bUE"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="547.5" y="454.5"/>
