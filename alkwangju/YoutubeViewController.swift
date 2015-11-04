@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class YoutubeViewController: UIViewController {
     
@@ -20,7 +21,9 @@ class YoutubeViewController: UIViewController {
         super.viewDidLoad()
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         let screenWidth = screenSize.width
-        
+        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        var error:NSError?
         let screenHeight = screenSize.height
 //        println(screenHeight)
         var html="<html><body style=\"margin:0;padding:0\"><embed align=\"center\" style=\"width:100%;height:90%\" src=\"https://www.youtube.com/embed/"+website!+"?rel=0&amp;autoplay=1&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></embed></body></html>"
